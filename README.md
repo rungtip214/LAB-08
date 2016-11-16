@@ -245,6 +245,37 @@ public class TryCatch
      }
  }
 ```
+
+เกิดข้อผิดพลาด
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture03.PNG?raw=true)
+
+แก้ไขดังนี้
+
+```
+using System;
+public class TryCatch
+{
+    static void Main(string[] args)
+    {
+        int value = 800000000;
+
+            checked // check for overflow
+        {
+            try
+            {
+            int square = value * value;
+            Console.WriteLine("{0} ^ 2 = {1}", value, square);
+           }
+            catch (OverflowException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+        }        
+    }
+}
+```
+
 ###1.1.3. คำสั่ง ```throw```
 
 คำสั่ง ```throw``` ใช้เพื่อเปลี่ยนเส้นทางการทำงานของโปรแกรมโดยเจาะจง exception เป้าหมาย
