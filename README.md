@@ -277,6 +277,8 @@ public class TryCatch
 }
 ```
 
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture05.PNG?raw=true)
+
 ###1.1.3. คำสั่ง ```throw```
 
 คำสั่ง ```throw``` ใช้เพื่อเปลี่ยนเส้นทางการทำงานของโปรแกรมโดยเจาะจง exception เป้าหมาย
