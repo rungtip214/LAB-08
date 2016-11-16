@@ -178,7 +178,7 @@ public class TryCatch
 
 ไม่เกิดข้อผิดพลาด
 
-![]()
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture02.PNG?raw=true)
 
 ###2.
 ``` csharp
@@ -199,7 +199,7 @@ public class TryCatch
 
 เกิดข้อผิดพลาด
 
-![]()
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture03.PNG?raw=true)
 
 แก้ไขดังนี้
 
@@ -228,6 +228,7 @@ public class TryCatch
 }
 ```
 
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture04.PNG?raw=true)
 ###3.
 ``` csharp
 using System;
