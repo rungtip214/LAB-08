@@ -247,6 +247,7 @@ public class TryCatch
 ```
 
 เกิดข้อผิดพลาด
+
 ![](https://github.com/rungtip214/LAB-08/blob/master/Capture03.PNG?raw=true)
 
 แก้ไขดังนี้
