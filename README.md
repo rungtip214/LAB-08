@@ -173,6 +173,13 @@ public class TryCatch
      }
  }
 ```
+
+ผลการทดลอง
+
+ไม่เกิดข้อผิดพลาด
+
+![]()
+
 ###2.
 ``` csharp
 using System;
@@ -187,6 +194,40 @@ public class TryCatch
      }
  }
 ```
+
+ผลการทดลอง
+
+เกิดข้อผิดพลาด
+
+![]()
+
+แก้ไขดังนี้
+
+```
+using System;
+public class TryCatch
+{
+    static void Main(string[] args)
+    {
+            int a = 0;
+            int b = 10;
+        try
+        {
+            b /= a;
+            Console.WriteLine(a);
+        }
+        catch (NullReferenceException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        catch (DivideByZeroException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+}
+```
+
 ###3.
 ``` csharp
 using System;
