@@ -756,6 +756,68 @@ Good
 Input day name : sun
 sun is Sunday, color Red
 ```
+
+code
+
+```
+using System;
+using System.IO;
+public class switchLearning
+{
+    public static void Main()
+    {
+        Console.Write("Input day name (sun, mon, tue, wed, thu, fri, sat) : ");
+        string gradeString = Console.ReadLine();
+        string message, mco;
+        Console.WriteLine("");
+        Console.WriteLine("Answer");
+        switch (gradeString)
+        {
+            case "sun":
+                message = "Sunday";
+                mco = "color Red";
+                break;
+            case "mon":
+                message = "Monday";
+                mco = "color Yellow";
+                break;
+            case "tue":
+                message = "Tuesday";
+                mco = "color Pink";
+                break;
+            case "wed":
+                message = "Wednesday";
+                mco = "color Green";
+                break;
+            case "thu":
+                message = "Thursday";
+                mco = "color Orange";
+                break;
+            case "fai":
+                message = "Faiday";
+                mco = "color Light blue";
+                break;
+            case "sat":
+                message = "Saturday";
+                mco = "color Purple";
+                break;
+
+            default:
+                message = "---";
+                mco = "---";
+                break;
+        }
+        Console.WriteLine("");
+        Console.Write(message);
+        Console.WriteLine("");
+        Console.WriteLine(mco);
+        Console.WriteLine("");
+    }
+}
+```
+
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture16.PNG?raw=true)
+
 **ตารางกำหนดชื่อและสีประจำวัน**
 
 Input ที่รับได้	|ชื่อวัน|	สี
