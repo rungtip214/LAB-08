@@ -523,6 +523,10 @@ this line is always execute
 
 1. ถ้าค่าที่ผู้ใช้ป้อน เท่ากับ ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Hooray, You win!!”``` ออกทางหน้าจอ มิฉะนั้นให้พิมพ์คำว่า ```“Sorry, You loss!!”```
 
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture13.PNG?raw=true)
+
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture14.PNG?raw=true)
+
 ###1.2.3.	คำสั่ง ```if``` ซ้อนกัน (nested if)
 คำสั่ง ```if``` สามารถเขียนซ้อนกันเป็นชั้นได้ เรียกว่า nested if มีรูปแบบดังนี้
 ####รูปแบบของคำสั่ง nested if
