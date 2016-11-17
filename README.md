@@ -653,6 +653,45 @@ Grade C
 
 3. รูปแบบการพิมพ์คือ score: [sss] grade: [gg] เมื่อ sss คือคะแนน และ gg คือ เกรดที่ได้
 
+```
+using System;
+using System.IO;
+namespace RandomNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("GPA ");
+            Console.WriteLine("");
+            Random random = new Random();
+            int point = random.Next(0, 100);
+            Console.WriteLine("Random Your gade  = {0} ", point);
+            Console.WriteLine("---------------------");
+            Console.WriteLine("");
+            if (point < 50)
+                Console.WriteLine("Grade F");
+            else if (point == 50 | point < 55)
+                Console.WriteLine("Grade D");
+            else if (point == 55 | point < 60)
+                Console.WriteLine("Grade D+");
+            else if (point == 60 | point < 65)
+                Console.WriteLine("Grade C");
+            else if (point == 65 | point < 70)
+                Console.WriteLine("Grade C+");
+            else if (point == 70 | point < 75)
+                Console.WriteLine("Grade B");
+            else if (point == 75 | point < 80)
+                Console.WriteLine("Grade B+");
+            else
+                Console.WriteLine("Grade A");
+        }
+    }
+}
+```
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture15.PNG?raw=true)
+
 ###1.2.5. คำสั่ง ```switch```
 
 ในกรณีที่มีทางเลือกในการตัดสินใจเป็นจำนวนมาก ไม่เป็นการสะดวกที่จะเขียนเป็นโปรแกรมยาวๆ เช่นในกรณีของคำสั่ง if…else…if ภาษา C# มีคำสั่งตัดสินใจเลือกทิศทางของโปรแกรมแบบหลายทางเลือกให้ใช้คือคำสั่ง switch ซึ่งรูปแบบการใช้งาน ดังนี้
