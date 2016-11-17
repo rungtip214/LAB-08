@@ -313,6 +313,7 @@ public class ExceptionLearning
 
 1.	DivideByZeroException
 
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture06.PNG?raw=true)
 
 2.	NullReferenceException
 
