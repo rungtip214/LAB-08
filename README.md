@@ -527,6 +527,40 @@ this line is always execute
 
 ![](https://github.com/rungtip214/LAB-08/blob/master/Capture14.PNG?raw=true)
 
+```
+using System;
+using System.IO;
+namespace RandomNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Random 0 - 9");
+            Console.WriteLine("Pleace Input Number ");
+            Console.WriteLine("");
+            Console.Write("number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("");
+            Console.WriteLine("------------------");
+            Random random = new Random();
+            int randomNumber1 = random.Next(0, 9);
+            Console.WriteLine("Random  = {0} ", randomNumber1);
+            Console.WriteLine("----------------");
+            Console.WriteLine("");
+            if (a == randomNumber1)
+            {
+                Console.WriteLine("Hooray, You win!!");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, You loss!!");
+            }
+        }
+    }
+}
+```
+
 ###1.2.3.	คำสั่ง ```if``` ซ้อนกัน (nested if)
 คำสั่ง ```if``` สามารถเขียนซ้อนกันเป็นชั้นได้ เรียกว่า nested if มีรูปแบบดังนี้
 ####รูปแบบของคำสั่ง nested if
