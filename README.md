@@ -427,8 +427,53 @@ execute next line
 ให้เขียนโปรแกรมสุ่มตัวเลข (จากใบงานที่ 7) แล้วใช้คำสั่ง ```if``` อย่างเดียวเท่านั้น โดยมีเงื่อนไขต่อไปนี้
 
 1.	ถ้าค่าที่ผู้ใช้ป้อน มากกว่า ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Too Hight, You loss!!”``` ออกทางหน้าจอ
+
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture11.PNG?raw=true)
+
 2.	ถ้าค่าที่ผู้ใช้ป้อน น้อยกว่า ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Too Low, You loss!!”```ออกทางหน้าจอ
+
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture10.PNG?raw=true)
+
 3.	ถ้าค่าที่ผู้ใช้ป้อน เท่ากับ ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Okay, You win!!”``` ออกทางหน้าจอ
+
+![](https://github.com/rungtip214/LAB-08/blob/master/Capture12.PNG?raw=true)
+
+```
+using System;
+using System.IO;
+namespace RandomNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Random 0 - 9");
+            Console.WriteLine("Pleace Input Number ");
+            Console.WriteLine("");
+            Console.Write("number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("");
+
+            Console.WriteLine("-----------------");
+            Random random = new Random();
+            int randomNumber1 = random.Next(0, 9);
+            Console.WriteLine("Random  = {0} ", randomNumber1);
+            Console.WriteLine("-----------------");
+            Console.WriteLine("");
+            if (a > randomNumber1)
+            {
+                Console.WriteLine("Too Hight, You loss!!");
+            }
+            if (a < randomNumber1)
+            {
+                Console.WriteLine("Too Low, You loss!!");
+            }
+            if (a == randomNumber1)
+                Console.WriteLine("Okay, You win!!");
+        }
+    }
+}
+```
 
 ###1.2.2.	คำสั่ง ```if…else```
 
